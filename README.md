@@ -31,3 +31,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
+
+
+## custom run
+```
+# run server
+node ws-server.js
+#run client
+cnpm run serve
+```
