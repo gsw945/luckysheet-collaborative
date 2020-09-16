@@ -19,6 +19,20 @@ export default {
           $(function () {
             luckysheet.create({
               container: "luckysheet",
+              lang: 'zh',
+              title: 'Luckysheet Demo fishmint',
+              allowUpdate: true,
+              gridKey: '123456',
+              loadUrl: '/api/list',
+              loadSheetUrl: '/api/sheet',
+              updateUrl: `ws://${window.location.hostname}:3000/ws/update`,
+              updateImageUrl: '/api/thumbnail',
+              fullscreenmode: false,
+              userInfo: '<i style="font-size:16px;color:#ff6a00;" class="fa fa-taxi" aria-hidden="true"></i> fishmint',
+              userMenuItem: [
+                {url:"10.96.8.8:8976", "icon":'<i class="fa fa-folder" aria-hidden="true"></i>', "name":"我的表格"},
+                {url:"10.96.8.8:8976", "icon":'<i class="fa fa-sign-out" aria-hidden="true"></i>', "name":"退出登陆"}
+              ],
             });
           });
       
