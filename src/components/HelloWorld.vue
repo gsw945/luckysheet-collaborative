@@ -21,6 +21,8 @@ export default {
               container: "luckysheet",
               lang: 'zh',
               title: 'Luckysheet Demo fishmint',
+              column: 22,
+              row: 30,
               allowUpdate: true,
               gridKey: '123456',
               loadUrl: '/api/list',
@@ -33,6 +35,7 @@ export default {
                 {url:"10.96.8.8:8976", "icon":'<i class="fa fa-folder" aria-hidden="true"></i>', "name":"我的表格"},
                 {url:"10.96.8.8:8976", "icon":'<i class="fa fa-sign-out" aria-hidden="true"></i>', "name":"退出登陆"}
               ],
+              myFolderUrl: "10.96.8.8:8976"
             });
           });
       

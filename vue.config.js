@@ -1,4 +1,4 @@
-const webpackMockServer = require("webpack-mock-server");
+// const webpackMockServer = require("webpack-mock-server");
 
 module.exports = {
   lintOnSave: false,
@@ -8,6 +8,13 @@ module.exports = {
     host: '0.0.0.0',
     public: '10.96.8.8:8976',
     disableHostCheck: true,
-    before: webpackMockServer.use,
+    // before: webpackMockServer.use,
+    proxy: {
+        '/api': {
+            target: 'http://localhost:3000',
+            ws: false,
+            changeOrigin: true,
+        }
+    }
   }
 }
